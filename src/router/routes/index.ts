@@ -8,27 +8,11 @@ import type { RouteRecordRaw } from 'vue-router'
 const routes: RouteRecordRaw[] = [
   {
     path: '/',
-    redirect: '/login',
-  },
-  {
-    path: '/',
     name: '/',
-    component: () => import('@/layout/index.vue'), //布局页
+    component: () => import('@/views/Index.vue'), //布局页
     meta: {
       title: '首页',
     },
-  },
-  {
-    path: '/login',
-    name: 'login',
-    component: () => import('@/views/login/Index.vue'),
-    meta: {
-      title: '登录',
-    },
-  },
-  {
-    path: '/:catchAll(.*)',
-    redirect: '/404',
   },
 ]
 
