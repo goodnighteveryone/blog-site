@@ -14,6 +14,14 @@ const routes: RouteRecordRaw[] = [
       title: '首页',
     },
   },
+  {
+    path: '/chat',
+    name: 'chat',
+    component: () => import('@/views/Chat.vue'),
+    meta: {
+      title: 'chatGPT',
+    },
+  },
 ]
 
 export default routes
